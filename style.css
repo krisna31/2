@@ -6,13 +6,15 @@ body {
 }
 
 .container {
-	width: 800px;
+	width: 960px;
 	margin: auto;
 	background-color: gainsboro;
+	border: 2px solid black;
 }
 
 .header {
 	margin: 5px;
+	margin-left: 15px;
 }
 
 .header h1 {
@@ -33,12 +35,12 @@ body {
 }
 
 .header a:hover {
-	background-color: lightblue;
+	background-color: lightskyblue;
 	color: white;
 }
 
 .hero {
-	height: 250px;
+	height: 333px;
 	background-image: url(picture/hero.png);
 	background-size: cover;
 	background-position-y: -88px;
@@ -46,26 +48,63 @@ body {
 	border-bottom: 5px solid rgba(192, 17, 17, 0.479);
 }
 
-.main {
-	margin: 10px;
-}
-
-.main h2 {
+.content h2 {
 	margin: 5px;
-	font-size: 24px;
+	font-size: 28px;
 }
 
-.main p {
+.content p {
 	margin: 8px;
-	font-size: 12px;
+	font: 12px/16px arial;
+}
+
+.main {
+	width: 600px;
+	padding: 10px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.sidebar{
+	width: 300px;
+	float: right;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.sidebar h3{
+	font-weight: bold;
+	font-size: 24;
+}
+
+.sidebar img {
+	float: left;
+	margin-right: 8px;
+	margin-top: 3px;
 }
 
 .footer {
 	background-color: rgb(34, 31, 31);
-	padding: 18px;
+	padding: 16px;
+	box-sizing: border-box;
 }
 
 .footer p {
 	text-align: center;
 	color: white;
 }
+
